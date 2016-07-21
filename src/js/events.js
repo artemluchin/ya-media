@@ -22,8 +22,8 @@ function _onButtonClick() {
   
   // Вешаем обработчики на вновьсозданный тэг video
   video.addEventListener("loadstart", function() {
-    canvasSubs.width = canvasEffects.width = 640;
-    canvasSubs.height = canvasEffects.height = 360;
+    // canvasSubs.width = canvasEffects.width = 640;
+    // canvasSubs.height = canvasEffects.height = 360;
     initcanvasSubs();
     drawText(['Наматываем пленку...'])
   }, false);
