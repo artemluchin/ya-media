@@ -20,8 +20,14 @@ function _onButtonClick() {
   audioSource.connect(audioFilter);
   audioFilter.connect(audioContext.destination);
   
-  
   // Вешаем обработчики на вновьсозданный тэг video
+  video.addEventListener("loadstart", function() {
+    canvasSubs.width = canvasEffects.width = 640;
+    canvasSubs.height = canvasEffects.height = 360;
+    initcanvasSubs();
+    drawText(['Наматываем пленку...'])
+  }, false);
+  
   video.addEventListener('canplay', function() {
     aspectRatio = video.videoWidth / video.videoHeight;
     canvasSubs.width = canvasEffects.width = 1280;
@@ -29,6 +35,7 @@ function _onButtonClick() {
     initCanvasEffects();
     initcanvasSubs();
     initGrainPattern();
+    drawText(['Приятного просмотра'])
   }, false);
   
   video.addEventListener('play', function () {

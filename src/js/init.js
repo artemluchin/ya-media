@@ -32,7 +32,7 @@ function initcanvasSubs() {
   ctxSubs.font = ""+canvasSubs.height * 0.070+"px Oranienbaum";
   ctxSubs.fillStyle = 'black';
   ctxSubs.fillRect(0, 0, canvasSubs.width, canvasSubs.height);
-  drawText(['Приятного просмотра']);
+  // drawText(['Приятного просмотра']);
 }
 
 
