@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Video</title>
+  <link href='https://fonts.googleapis.com/css?family=Oranienbaum' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="dist/css/app.css">
+</head>
+<body>
+  <div class="container">
+    <div class="order-form">
+      <div class="order-form__ticket">
+        <div class="ticket__screening">
+          <span class="ticket__title">Фильм</span>
+          <span class="ticket__text">Шерлок Холмс</span>
+        </div>
+        <div class="ticket__place">
+          <span class="ticket__title">Зал </span><span class="ticket__text">5</span>
+          <span class="ticket__title">Ряд </span><span class="ticket__text">6</span>
+          <span class="ticket__title">Место </span><span class="ticket__text">12</span>
+        </div>
+        <div class="ticket__taper">
+          <span class="ticket__title">Тапер</span>
+          <input type="text" name="taper" value="https://upload.wikimedia.org/wikipedia/commons/a/a6/Maple_Leaf_RagQ.ogg"/>
+        </div>
+        <div class="ticket__subtitles">
+          <span class="ticket__title">Субтитры</span>
+          <input type="text" name="subtitles" value="https://raw.githubusercontent.com/shri-msk-2016/dz-multimedia/master/subs.srt"/>
+        </div>
+      </div>
+      <button class='order-form__button'>Купить билет</button>
+    </div>
+    <div class="player">
+      <canvas class="player__video" width='1280' height='720' ></canvas>
+      <canvas class="player__subtitles" crossorigin="anonymous"></canvas>
+      <canvas class="player__effects" crossorigin="anonymous"></canvas>
+    </div>
+  </div>
+  
+  <script src="dist/js/app.js"></script>
+</body>
+</html>

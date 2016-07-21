@@ -1,0 +1,12 @@
+.container {
+  transition: background 1s;
+  position: relative;
+  height: 100vh;
+  padding-top: 80px;
+  background: url('../assets/img/cinema.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.video {
+  display: none;
+}

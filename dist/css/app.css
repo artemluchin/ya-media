@@ -1,0 +1,124 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.container {
+  transition: background 1s;
+  position: relative;
+  height: 100vh;
+  padding-top: 80px;
+  background: url("../assets/img/cinema.jpg") no-repeat center center;
+  background-size: cover; }
+
+.video {
+  display: none; }
+
+.order-form {
+  width: 700px;
+  height: 350px;
+  margin: 0 auto;
+  background: url("../assets/img/ticket.png") no-repeat center center;
+  background-size: contain; }
+
+.order-form__button {
+  margin: 20px auto 0px;
+  display: block;
+  width: 170px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  color: #5a2306;
+  background-color: #ffc11c;
+  border: 3px solid #5a2306;
+  cursor: pointer;
+  transform-origin: center center;
+  transition: transform .3s, opacity .3s; }
+
+.order-form__ticket {
+  height: 100%;
+  padding: 90px 110px;
+  box-sizing: border-box; }
+  .order-form__ticket div {
+    margin-bottom: 22px;
+    font-family: 'Oranienbaum', serif; }
+
+.ticket__screening input,
+.ticket__subtitles input,
+.ticket__taper input {
+  background: transparent;
+  font-family: 'Oranienbaum', serif;
+  outline: none;
+  height: 25px;
+  border-width: 0px 0px 2px 0px;
+  border-color: #5a2306;
+  font-size: 18px; }
+
+.ticket__title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-left: 15px; }
+
+.ticket__text {
+  font-size: 18px; }
+
+canvas {
+  position: absolute;
+  left: 50%;
+  top: 40px;
+  transform: translateX(-50%);
+  -webkit-user-select: none; }
+
+.player {
+  position: relative;
+  opacity: 0;
+  transition: opacity .8s;
+  margin-top: 50px; }
+
+.player__effects {
+  box-shadow: inset 0px 0px 100px #6f6f6f; }
